@@ -37,10 +37,12 @@ C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\De
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\Radzen.Blazor.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Users\in2dm3\Desktop\CosasEkaitz\RetoJorge\Grupo1EcoMaps\EcoMapsServer\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
