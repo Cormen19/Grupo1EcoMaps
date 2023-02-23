@@ -7,7 +7,7 @@
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
-            <RadzenCard class="mb-4">
+            <RadzenCard class="mb-4" id="map">
                 <RadzenCheckBox @bind-Value=@showMadridMarker Name="showMarker" />
                 <RadzenLabel Text="Show marker for Madrid" Component="showMarker" Style="margin-left: 8px; vertical-align: middle;" />
             </RadzenCard>
@@ -31,12 +31,15 @@
 @code {
     int zoom = 3;
     bool showMadridMarker;
+    string mensaje = "";
 
     RadzenGoogleMap map;
 
-    void OnMapClick(GoogleMapClickEventArgs args)
+    async void OnMapClick(GoogleMapClickEventArgs args)
     {
         //Meter un sweet alert que muestre donde hemos hecho click mostrando la latitud y la longitud
+        mensaje = $"Map clicked at Lat:{args.Position.Lat}, Lng:{args.Position.Lng}";
+        await JSRuntime.InvokeVoidAsync("alert", mensaje);
     }
 
     async Task OnMarkerClick(RadzenGoogleMapMarker marker)
