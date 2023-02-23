@@ -8,6 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddLocalization();
+
+var httpClientHandler = new HttpClientHandler();
+httpClientHandler.ServerCertificateCustomValidationCallback =
+    (message, cert, chain, errors) => true;
+
+builder.Services.AddSingleton(new HttpClient(httpClientHandler)
+{
+    BaseAddress = new Uri("https://localhost:7104")
+});
+
 
 var app = builder.Build();
 
@@ -27,5 +38,6 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+app.UseRequestLocalization("en-US");
 
 app.Run();

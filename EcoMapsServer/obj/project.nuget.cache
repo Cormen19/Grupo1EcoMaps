@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cTcDLhXxO4u2yl0W6eEDmay4CGnyiXKGP7dpyER9oWLvQYH8v8NDlUU76NYQcv0WSTMYJ2ftNYaFN3802E4uqw==",
+  "dgSpecHash": "luuTd8bg+4GTsICl9d9c8azFgCjyBrC8uxP/ohz6GwN7BOIjr6zzBLDS51wT2J2swsGKuQcP31LnSJ7PNgv7NQ==",
   "success": true,
-  "projectFilePath": "D:\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+  "projectFilePath": "C:\\Users\\in2dm3\\Desktop\\TFG\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\in2dm3\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\in2dm3\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

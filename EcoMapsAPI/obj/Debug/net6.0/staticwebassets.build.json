@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jQ5lzCmWGseVxx6L/MKAPaw9jnC3oYR/56l9eHEZgLk=",
+  "Source": "EcoMapsAPI",
+  "BasePath": "_content/EcoMapsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
