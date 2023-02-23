@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pOKbcZpcCa+qCOGhTAjPen7WIIY9sTyM9U9xjJr9HHY=",
+  "Hash": "WpDjNI3P+KYMit0JYOVSfKF1iLgIl0DSyiMnxQV95Kg=",
   "Source": "EcoMapsServer",
   "BasePath": "_content/EcoMapsServer",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "EcoMapsServer\\wwwroot",
       "Source": "EcoMapsServer",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "Pattern": "**"
     }
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "C:\\Users\\in2dm3\\.nuget\\packages\\radzen.blazor\\4.7.1\\staticwebassets\\Radzen.Blazor.js"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EcoMapsServer.styles.css",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EcoMapsServer.styles.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "EcoMapsServer.styles.css",
       "AssetKind": "All",
@@ -592,13 +592,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EcoMapsServer.styles.css"
+      "OriginalItemSpec": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EcoMapsServer.styles.css"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcoMapsServer.bundle.scp.css",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcoMapsServer.bundle.scp.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "EcoMapsServer.bundle.scp.css",
       "AssetKind": "All",
@@ -609,13 +609,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcoMapsServer.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcoMapsServer.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\site.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\favicon.ico",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
       "BasePath": "_content/EcoMapsServer",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
