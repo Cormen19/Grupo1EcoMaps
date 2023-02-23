@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj": {}
+    "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj": {}
   },
   "projects": {
-    "D:\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj": {
+    "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+        "projectUniqueName": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
         "projectName": "EcoMapsServer",
-        "projectPath": "D:\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+        "projectPath": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
         "packagesPath": "C:\\Users\\in2dm3\\.nuget\\packages\\",
-        "outputPath": "D:\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
+        "outputPath": "C:\\Users\\in2dm3\\Desktop\\CosasEkaitz\\RetoJorge\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
