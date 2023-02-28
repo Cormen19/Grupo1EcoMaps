@@ -60,6 +60,18 @@ namespace EcoMapsAPI.Controllers
                 c.Longitud
             }).ToListAsync();
             return Ok(allContenedores);
-        }   
+        }
+
+        [HttpGet("Aceite")]
+        public async Task<ActionResult<IEnumerable<ContResiduo>>> GetAllContenedoresAceite()
+        {
+            var allContenedores = await _context.ContResiduos.Where(c => c.Category.Contains("Aceite")).Select(c => new
+            {
+                c.Category,
+                c.Latitud,
+                c.Longitud
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }

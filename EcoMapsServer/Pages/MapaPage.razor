@@ -9,7 +9,7 @@
 <button type="button" @onclick="contenedoresVidrio"> Mostrar contenedores vidrio</button>
 <button type="button" @onclick="contenedoresPapel"> Mostrar contenedores Papel</button>
 <button type="button" @onclick="contenedoresEnvases"> Mostrar contenedores Envases</button>
-<br />
+<button type="button" @onclick="contenedoresAceite"> Mostrar contenedores Aceite</button>
 <button type="button" @onclick="contenedoresRopa"> Mostrar contenedores Ropa</button>
 <div class="container-fluid">
     <div class="row p-3">
@@ -46,6 +46,13 @@
                             <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
                         }
                     }
+                    @if (contenedores5.Count > 0)
+                    {
+                        @foreach (var item in contenedores5.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
 
                 </Markers>
             </RadzenGoogleMap>
@@ -65,6 +72,7 @@
     public string Url2 = "/api/Contenedores/Papel";
     public string Url3 = "/api/Contenedores/Envases";
     public string Url4 = "/api/Contenedores/Ropa";
+    public string Url5 = "/api/Contenedores/Aceite";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -72,6 +80,7 @@
     public List<Contenedores>? contenedores2 = new List<Contenedores>();
     public List<Contenedores>? contenedores3 = new List<Contenedores>();
     public List<Contenedores>? contenedores4 = new List<Contenedores>();
+    public List<Contenedores>? contenedores5 = new List<Contenedores>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -111,5 +120,9 @@
     async Task contenedoresRopa()
     {
         contenedores4 = await Http.GetFromJsonAsync<List<Contenedores>>(Url4);
+    }
+    async Task contenedoresAceite()
+    {
+        contenedores5 = await Http.GetFromJsonAsync<List<Contenedores>>(Url5);
     }
 }
