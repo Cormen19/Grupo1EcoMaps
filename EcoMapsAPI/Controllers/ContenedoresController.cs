@@ -49,5 +49,17 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+
+        [HttpGet("Ropa")]
+        public async Task<ActionResult<IEnumerable<ContResiduo>>> GetAllContenedoresRopa()
+        {
+            var allContenedores = await _context.ContResiduos.Where(c => c.Category.Contains("Ropa")).Select(c => new
+            {
+                c.Category,
+                c.Latitud,
+                c.Longitud
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }   
     }
 }
