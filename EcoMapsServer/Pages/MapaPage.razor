@@ -6,13 +6,13 @@
 @inject IJSRuntime JSRuntime
 @page "/mapa"
 <h3>MapaPage</h3>
+<button type="button" @onclick="contenedoresVidrio"> Mostrar contenedores vidrio</button>
+<button type="button" @onclick="contenedoresPapel"> Mostrar contenedores Papel</button>
+<button type="button" @onclick="contenedoresEnvases"> Mostrar contenedores Envases</button>
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
-            <RadzenCard class="mb-4" id="map">
-                <button type="button" @onclick="contenedoresVidrio"> Mostrar contenedores vidrio</button>
-
-            </RadzenCard>
+          
             <RadzenGoogleMap @ref=map style="height: 400px" Options=@(new Dictionary<string, object> { { "disableDoubleClickZoom", true } })
                              Zoom=@zoom Center=@(new GoogleMapPosition() { Lat = 42.6977, Lng = 23.3219 }) MapClick=@OnMapClick MarkerClick=@OnMarkerClick>
                 <Markers>
@@ -23,12 +23,28 @@
                             <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
                         }
                     }
+                    @if (contenedores2.Count > 0)
+                    {
+                        @foreach (var item in contenedores2.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
+                    @if (contenedores3.Count > 0)
+                    {
+                        @foreach (var item in contenedores3.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
 
                 </Markers>
             </RadzenGoogleMap>
         </div>
     </div>
+
 </div>
+
 
 
 
@@ -37,10 +53,14 @@
 @code {
     int zoom = 3;
     public string Url = "/api/Contenedores";
+    public string Url2 = "/api/Contenedores/Papel";
+    public string Url3 = "/api/Contenedores/Envases";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
     public List<Contenedores>? contenedores = new List<Contenedores>();
+    public List<Contenedores>? contenedores2 = new List<Contenedores>();
+    public List<Contenedores>? contenedores3 = new List<Contenedores>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -69,5 +89,12 @@
         contenedores = await Http.GetFromJsonAsync<List<Contenedores>>(Url);
     }
     //contenedores = await Http.GetFromJsonAsync<List<Contenedores>>(Url);
-
+    async Task contenedoresPapel()
+    {
+        contenedores2 = await Http.GetFromJsonAsync<List<Contenedores>>(Url2);
+    }
+    async Task contenedoresEnvases()
+    {
+        contenedores3 = await Http.GetFromJsonAsync<List<Contenedores>>(Url3);
+    }
 }
