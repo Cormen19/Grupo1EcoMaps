@@ -17,6 +17,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
+    public virtual DbSet<Eolica> Eolicas { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("name=DefaultConnection");
 
@@ -44,6 +46,13 @@ public partial class EcoMapsContext : DbContext
             entity.Property(e => e.Title)
                 .HasMaxLength(255)
                 .HasColumnName("title");
+        });
+
+        modelBuilder.Entity<Eolica>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.Nombre).HasMaxLength(255);
         });
 
         OnModelCreatingPartial(modelBuilder);

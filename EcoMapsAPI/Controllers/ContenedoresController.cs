@@ -74,6 +74,17 @@ namespace EcoMapsAPI.Controllers
             return Ok(allContenedores);
         }
 
-       
+        [HttpGet("Eolicas")]
+        public async Task<ActionResult<IEnumerable<ContResiduo>>> GetAllEolicas()
+        {
+            var allContenedores = await _context.Eolicas.Select(c => new
+            {
+                c.Nombre,
+                c.Latitud,
+                c.Longitud
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
+
     }
 }
