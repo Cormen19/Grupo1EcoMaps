@@ -73,5 +73,7 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+
+       
     }
 }
