@@ -75,7 +75,7 @@ namespace EcoMapsAPI.Controllers
         }
 
         [HttpGet("Eolicas")]
-        public async Task<ActionResult<IEnumerable<ContResiduo>>> GetAllEolicas()
+        public async Task<ActionResult<IEnumerable<Eolica>>> GetAllEolicas()
         {
             var allContenedores = await _context.Eolicas.Select(c => new
             {
@@ -86,5 +86,16 @@ namespace EcoMapsAPI.Controllers
             return Ok(allContenedores);
         }
 
+        [HttpGet("CochesElec")]
+        public async Task<ActionResult<IEnumerable<CocheElec>>> GetAllCochesE()
+        {
+            var allContenedores = await _context.CocheElecs.Select(c => new
+            {
+                c.Titular,
+                c.Latitud,
+                c.Longitud
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }

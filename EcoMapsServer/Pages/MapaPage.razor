@@ -11,6 +11,7 @@
 <button type="button" @onclick="contenedoresEnvases"> Mostrar contenedores Envases</button>
 <button type="button" @onclick="contenedoresAceite"> Mostrar contenedores Aceite</button>
 <button type="button" @onclick="contenedoresRopa"> Mostrar contenedores Ropa</button>
+<button type="button" @onclick="EnergiaEolica"> Mostrar  Energia Eolica</button>
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
@@ -53,7 +54,13 @@
                             <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
                         }
                     }
-
+                    @if (contenedores6.Count > 0)
+                    {
+                        @foreach (var item in contenedores6.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Nombre" Label="@item.Nombre" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -73,6 +80,7 @@
     public string Url3 = "/api/Contenedores/Envases";
     public string Url4 = "/api/Contenedores/Ropa";
     public string Url5 = "/api/Contenedores/Aceite";
+    public string Url6 = "/api/Contenedores/Eolicas";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -81,6 +89,7 @@
     public List<Contenedores>? contenedores3 = new List<Contenedores>();
     public List<Contenedores>? contenedores4 = new List<Contenedores>();
     public List<Contenedores>? contenedores5 = new List<Contenedores>();
+    public List<Eolicas>? contenedores6 = new List<Eolicas>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -123,5 +132,9 @@
     async Task contenedoresAceite()
     {
         contenedores5 = await Http.GetFromJsonAsync<List<Contenedores>>(Url5);
+    }
+    async Task EnergiaEolica()
+    {
+        contenedores6 = await Http.GetFromJsonAsync<List<Eolicas>>(Url6);
     }
 }
