@@ -15,17 +15,32 @@ public partial class EcoMapsContext : DbContext
     {
     }
 
+    public virtual DbSet<Bilbogarbi> Bilbogarbis { get; set; }
+
     public virtual DbSet<CocheElec> CocheElecs { get; set; }
 
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
     public virtual DbSet<Eolica> Eolicas { get; set; }
 
+    public virtual DbSet<PuntosMovile> PuntosMoviles { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("name=DefaultConnection");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Bilbogarbi>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("Bilbogarbi");
+
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
+        });
+
         modelBuilder.Entity<CocheElec>(entity =>
         {
             entity
@@ -83,6 +98,17 @@ public partial class EcoMapsContext : DbContext
             entity.HasNoKey();
 
             entity.Property(e => e.Nombre).HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<PuntosMovile>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.Desde).HasColumnType("datetime");
+            entity.Property(e => e.Hasta).HasColumnType("datetime");
+            entity.Property(e => e.Lat).HasColumnName("lat");
+            entity.Property(e => e.Lon).HasColumnName("lon");
+            entity.Property(e => e.Ubicacion).HasMaxLength(255);
         });
 
         OnModelCreatingPartial(modelBuilder);

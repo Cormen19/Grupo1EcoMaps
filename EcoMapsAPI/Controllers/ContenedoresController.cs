@@ -97,5 +97,28 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+
+        [HttpGet("PuntosMovil")]
+        public async Task<ActionResult<IEnumerable<CocheElec>>> GetAllPuntosMovil()
+        {
+            var allContenedores = await _context.PuntosMoviles.Select(c => new
+            {
+                c.Ubicacion,
+                c.Lat,
+                c.Lon
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
+        [HttpGet("Bilbogarbi")]
+        public async Task<ActionResult<IEnumerable<Bilbogarbi>>> GetAllBilbogarbi()
+        {
+            var allContenedores = await _context.Bilbogarbis.Select(c => new
+            {
+                c.Name,
+                c.Latitud,
+                c.Longitud
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }

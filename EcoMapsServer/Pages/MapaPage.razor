@@ -12,6 +12,9 @@
 <button type="button" @onclick="contenedoresAceite"> Mostrar contenedores Aceite</button>
 <button type="button" @onclick="contenedoresRopa"> Mostrar contenedores Ropa</button>
 <button type="button" @onclick="EnergiaEolica"> Mostrar  Energia Eolica</button>
+<button type="button" @onclick="CochesElectricos"> Mostrar puntos de recarga de coches</button>
+<button type="button" @onclick="PuntosMoviles"> Mostrar puntos moviles</button>
+<button type="button" @onclick="Bilbogarbis"> Mostrar Bilbaogarbis</button>
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
@@ -61,6 +64,27 @@
                             <RadzenGoogleMapMarker Title="@item.Nombre" Label="@item.Nombre" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
                         }
                     }
+                    @if (contenedores7.Count > 0)
+                    {
+                        @foreach (var item in contenedores7.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Titular" Label="@item.Titular" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
+                    @if (contenedores8.Count > 0)
+                    {
+                        @foreach (var item in contenedores8.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Ubicacion" Label="@item.Ubicacion" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Lat), Lng = Convert.ToDouble(@item.Lon) }) />
+                        }
+                    }
+                    @if (contenedores9.Count > 0)
+                    {
+                        @foreach (var item in contenedores9.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+                        }
+                    }
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -81,6 +105,9 @@
     public string Url4 = "/api/Contenedores/Ropa";
     public string Url5 = "/api/Contenedores/Aceite";
     public string Url6 = "/api/Contenedores/Eolicas";
+    public string Url7 = "/api/Contenedores/CochesElec";
+    public string Url8 = "/api/Contenedores/PuntosMovil";
+    public string Url9 = "/api/Contenedores/Bilbogarbi";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -90,6 +117,9 @@
     public List<Contenedores>? contenedores4 = new List<Contenedores>();
     public List<Contenedores>? contenedores5 = new List<Contenedores>();
     public List<Eolicas>? contenedores6 = new List<Eolicas>();
+    public List<CochesElec>? contenedores7 = new List<CochesElec>();
+    public List<PuntosMovil>? contenedores8 = new List<PuntosMovil>();
+    public List<Bilbogarbi>? contenedores9 = new List<Bilbogarbi>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -137,4 +167,17 @@
     {
         contenedores6 = await Http.GetFromJsonAsync<List<Eolicas>>(Url6);
     }
+    async Task CochesElectricos()
+    {
+        contenedores7 = await Http.GetFromJsonAsync<List<CochesElec>>(Url7);
+    }
+    async Task PuntosMoviles()
+    {
+        contenedores8 = await Http.GetFromJsonAsync<List<PuntosMovil>>(Url8);
+    }
+    async Task Bilbogarbis()
+    {
+        contenedores9 = await Http.GetFromJsonAsync<List<Bilbogarbi>>(Url9);
+    }
+
 }
