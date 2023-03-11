@@ -83,6 +83,7 @@
                         @foreach (var item in contenedores9.Take(20))
                         {
                             <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
+
                         }
                     }
                 </Markers>
