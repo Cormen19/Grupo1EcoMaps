@@ -166,7 +166,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.7.0": {
+      "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -775,13 +775,12 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Radzen.Blazor/4.7.1": {
+      "Radzen.Blazor/4.8.0": {
         "type": "package",
         "dependencies": {
           "LibSassBuilder": "2.0.1",
           "Microsoft.AspNetCore.Components": "6.0.0",
           "Microsoft.AspNetCore.Components.Web": "6.0.0",
-          "Microsoft.CSharp": "4.7.0",
           "System.Linq.Dynamic.Core": "1.2.22"
         },
         "compile": {
@@ -1533,10 +1532,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.7.0": {
-      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
-      "path": "microsoft.csharp/4.7.0",
+      "path": "microsoft.csharp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1549,7 +1548,6 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1559,7 +1557,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2438,10 +2436,10 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Radzen.Blazor/4.7.1": {
-      "sha512": "ciCFmcY04voBLCFk8someuFa/h/YnS73YyMDNGdoarx+rfc5z/poqgZe0ANS5lnBFC6shKDwmt4DHnT0kkf7Dw==",
+    "Radzen.Blazor/4.8.0": {
+      "sha512": "sqKlKQUXK7Nt2yeER3JZvolDzF5nFbi8TT0cOMK+3TTU0MH/rNYgcSJajpc0d6DiZx3wI6Z1AtT8Rn0ie14SVw==",
       "type": "package",
-      "path": "radzen.blazor/4.7.1",
+      "path": "radzen.blazor/4.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2460,7 +2458,7 @@
         "lib/net7.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.4.7.1.nupkg.sha512",
+        "radzen.blazor.4.8.0.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -3951,23 +3949,23 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.3",
-      "Radzen.Blazor >= 4.7.1"
+      "Radzen.Blazor >= 4.8.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\javit\\.nuget\\packages\\": {}
+    "C:\\Users\\Arkaitz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "projectUniqueName": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
       "projectName": "EcoMapsServer",
-      "projectPath": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
-      "packagesPath": "C:\\Users\\javit\\.nuget\\packages\\",
-      "outputPath": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
+      "projectPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "packagesPath": "C:\\Users\\Arkaitz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\javit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Arkaitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4005,7 +4003,7 @@
           },
           "Radzen.Blazor": {
             "target": "Package",
-            "version": "[4.7.1, )"
+            "version": "[4.8.0, )"
           }
         },
         "imports": [
@@ -4027,7 +4025,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
