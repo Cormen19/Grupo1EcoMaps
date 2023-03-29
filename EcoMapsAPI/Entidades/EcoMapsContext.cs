@@ -21,6 +21,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
+    public virtual DbSet<ContenedorBlanco> ContenedorBlancos { get; set; }
+
     public virtual DbSet<Eolica> Eolicas { get; set; }
 
     public virtual DbSet<PuntosMovile> PuntosMoviles { get; set; }
@@ -91,6 +93,23 @@ public partial class EcoMapsContext : DbContext
             entity.Property(e => e.Title)
                 .HasMaxLength(255)
                 .HasColumnName("title");
+        });
+
+        modelBuilder.Entity<ContenedorBlanco>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("ContenedorBlanco");
+
+            entity.Property(e => e.Description)
+                .HasMaxLength(255)
+                .HasColumnName("description");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
+            entity.Property(e => e.NºContenedor)
+                .HasMaxLength(255)
+                .HasColumnName("Nº CONTENEDOR");
         });
 
         modelBuilder.Entity<Eolica>(entity =>

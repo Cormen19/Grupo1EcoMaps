@@ -120,5 +120,16 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+        [HttpGet("ContenedorBlanco")]
+        public async Task<ActionResult<IEnumerable<ContenedorBlanco>>> GetAllContBlanc()
+        {
+            var allContenedores = await _context.ContenedorBlancos.Select(c => new
+            {
+                c.Name,
+                c.Lat,
+                c.Long
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }
