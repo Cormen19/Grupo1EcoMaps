@@ -25,6 +25,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<ContenedorBlanco> ContenedorBlancos { get; set; }
 
+    public virtual DbSet<EnvasesLigero> EnvasesLigeros { get; set; }
+
     public virtual DbSet<Eolica> Eolicas { get; set; }
 
     public virtual DbSet<PuntosMovile> PuntosMoviles { get; set; }
@@ -138,6 +140,43 @@ public partial class EcoMapsContext : DbContext
             entity.Property(e => e.NºContenedor)
                 .HasMaxLength(255)
                 .HasColumnName("Nº CONTENEDOR");
+        });
+
+        modelBuilder.Entity<EnvasesLigero>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.EdukiontziKodeaCodContenedor).HasColumnName("EDUKIONTZI_KODEA/COD_CONTENEDOR");
+            entity.Property(e => e.EdukiontziarenModeloaCasModeloContenedorCas)
+                .HasMaxLength(255)
+                .HasColumnName("EDUKIONTZIAREN MODELOA_CAS/MODELO CONTENEDOR_CAS");
+            entity.Property(e => e.EdukiontziarenModeloaEuModeloContenedorEu)
+                .HasMaxLength(255)
+                .HasColumnName("EDUKIONTZIAREN MODELOA_EU/MODELO CONTENEDOR_EU");
+            entity.Property(e => e.EkitaldiaEjercicio).HasColumnName("EKITALDIA/EJERCICIO");
+            entity.Property(e => e.HondakinarenFrakzioaCasFraccionDelResiduoCas)
+                .HasMaxLength(255)
+                .HasColumnName("HONDAKINAREN FRAKZIOA_CAS/FRACCION DEL RESIDUO_CAS");
+            entity.Property(e => e.HondakinarenFrakzioaEuFraccionDelResiduoEu)
+                .HasMaxLength(255)
+                .HasColumnName("HONDAKINAREN FRAKZIOA_EU/FRACCION DEL RESIDUO_EU");
+            entity.Property(e => e.Id).HasColumnName("_id");
+            entity.Property(e => e.Latitude)
+                .HasMaxLength(255)
+                .HasColumnName("latitude");
+            entity.Property(e => e.LatitudeGeo)
+                .HasMaxLength(255)
+                .HasColumnName("latitude GEO");
+            entity.Property(e => e.Longitude)
+                .HasMaxLength(255)
+                .HasColumnName("longitude");
+            entity.Property(e => e.LongitudeGeo)
+                .HasMaxLength(255)
+                .HasColumnName("longitude GEO");
+            entity.Property(e => e.UdalerriaKodeaCodMunicipio).HasColumnName("UDALERRIA_KODEA/COD_MUNICIPIO");
+            entity.Property(e => e.UdalerriaMunicipio)
+                .HasMaxLength(255)
+                .HasColumnName("UDALERRIA/MUNICIPIO");
         });
 
         modelBuilder.Entity<Eolica>(entity =>

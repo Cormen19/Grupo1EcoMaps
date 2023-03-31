@@ -142,5 +142,18 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+        [HttpGet("EnvasesLigeros")]
+        public async Task<ActionResult<IEnumerable<ContenedorBlanco>>> GetAllEnvasesLigeros()
+        {
+            var allContenedores = await _context.EnvasesLigeros.Select(c => new
+            {
+                c.UdalerriaMunicipio,
+                c.LatitudeGeo,
+                c.LongitudeGeo,
+                c.Latitude,
+                c.Longitude
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }
