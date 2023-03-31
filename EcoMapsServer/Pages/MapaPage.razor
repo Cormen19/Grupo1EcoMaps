@@ -93,6 +93,13 @@
                             <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Lat), Lng = Convert.ToDouble(@item.Long) }) />
                         }
                     }
+                    @if (contenedores11.Count > 0)
+                    {
+                        @foreach (var item in contenedores11.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Lugar" Label="@item.Lugar" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Lat), Lng = Convert.ToDouble(@item.Long) }) />
+                        }
+                    }
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -117,6 +124,7 @@
     public string Url8 = "/api/Contenedores/PuntosMovil";
     public string Url9 = "/api/Contenedores/Bilbogarbi";
     public string Url10 = "/api/Contenedores/ContenedorBlanco";
+    public string Url11 = "/api/Contenedores/CargaElectrica";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -130,6 +138,7 @@
     public List<PuntosMovil>? contenedores8 = new List<PuntosMovil>();
     public List<Bilbogarbi>? contenedores9 = new List<Bilbogarbi>();
     public List<ContenedorBlanco>? contenedores10 = new List<ContenedorBlanco>();
+    public List<CargaElectrica>? contenedores11 = new List<CargaElectrica>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -182,6 +191,7 @@
     async Task CochesElectricos()
     {
         contenedores7 = await Http.GetFromJsonAsync<List<CochesElec>>(Url7);
+        contenedores11 = await Http.GetFromJsonAsync<List<CargaElectrica>>(Url11);
     }
     async Task PuntosMoviles()
     {

@@ -17,6 +17,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<Bilbogarbi> Bilbogarbis { get; set; }
 
+    public virtual DbSet<CargaElectrica> CargaElectricas { get; set; }
+
     public virtual DbSet<CocheElec> CocheElecs { get; set; }
 
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
@@ -41,6 +43,32 @@ public partial class EcoMapsContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<CargaElectrica>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("carga_electrica");
+
+            entity.Property(e => e.Cvia)
+                .HasMaxLength(255)
+                .HasColumnName("CVIA");
+            entity.Property(e => e.Dirección)
+                .HasMaxLength(255)
+                .HasColumnName("DIRECCIÓN");
+            entity.Property(e => e.Fid).HasColumnName("FID");
+            entity.Property(e => e.Geocodigo)
+                .HasMaxLength(255)
+                .HasColumnName("GEOCODIGO");
+            entity.Property(e => e.Lugar)
+                .HasMaxLength(255)
+                .HasColumnName("LUGAR");
+            entity.Property(e => e.Tipo)
+                .HasMaxLength(255)
+                .HasColumnName("TIPO");
+            entity.Property(e => e.UtmX).HasColumnName("UTM_X");
+            entity.Property(e => e.UtmY).HasColumnName("UTM_Y");
         });
 
         modelBuilder.Entity<CocheElec>(entity =>

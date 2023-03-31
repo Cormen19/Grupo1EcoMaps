@@ -131,5 +131,16 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+        [HttpGet("CargaElectrica")]
+        public async Task<ActionResult<IEnumerable<ContenedorBlanco>>> GetAllCargaElec()
+        {
+            var allContenedores = await _context.CargaElectricas.Select(c => new
+            {
+                c.Lugar,
+                c.Lat,
+                c.Long
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }
