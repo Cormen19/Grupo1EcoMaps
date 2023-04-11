@@ -132,7 +132,7 @@ namespace EcoMapsAPI.Controllers
             return Ok(allContenedores);
         }
         [HttpGet("CargaElectrica")]
-        public async Task<ActionResult<IEnumerable<ContenedorBlanco>>> GetAllCargaElec()
+        public async Task<ActionResult<IEnumerable<CargaElectrica>>> GetAllCargaElec()
         {
             var allContenedores = await _context.CargaElectricas.Select(c => new
             {
@@ -143,13 +143,24 @@ namespace EcoMapsAPI.Controllers
             return Ok(allContenedores);
         }
         [HttpGet("EnvasesLigeros")]
-        public async Task<ActionResult<IEnumerable<ContenedorBlanco>>> GetAllEnvasesLigeros()
+        public async Task<ActionResult<IEnumerable<EnvasesLigero>>> GetAllEnvasesLigeros()
         {
             var allContenedores = await _context.EnvasesLigeros.Select(c => new
             {
                 c.UdalerriaMunicipio,
                 c.LatitudeGeo,
                 c.LongitudeGeo,
+                c.Latitude,
+                c.Longitude
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
+        [HttpGet("ContMarron")]
+        public async Task<ActionResult<IEnumerable<ContMarron>>> GetAllContMarron()
+        {
+            var allContenedores = await _context.ContMarrons.Select(c => new
+            {
+                c.Barrio,
                 c.Latitude,
                 c.Longitude
             }).ToListAsync();

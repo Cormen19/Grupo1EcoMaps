@@ -21,6 +21,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<CocheElec> CocheElecs { get; set; }
 
+    public virtual DbSet<ContMarron> ContMarrons { get; set; }
+
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
     public virtual DbSet<ContenedorBlanco> ContenedorBlancos { get; set; }
@@ -99,6 +101,36 @@ public partial class EcoMapsContext : DbContext
                 .HasMaxLength(255)
                 .HasColumnName("Tipo de conectores");
             entity.Property(e => e.Titular).HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<ContMarron>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("ContMarron");
+
+            entity.Property(e => e.Barrio)
+                .HasMaxLength(255)
+                .HasColumnName("BARRIO");
+            entity.Property(e => e.Contenedor)
+                .HasMaxLength(255)
+                .HasColumnName("CONTENEDOR");
+            entity.Property(e => e.Description)
+                .HasMaxLength(255)
+                .HasColumnName("description");
+            entity.Property(e => e.Distrito)
+                .HasMaxLength(255)
+                .HasColumnName("DISTRITO");
+            entity.Property(e => e.F8).HasMaxLength(255);
+            entity.Property(e => e.Latitude)
+                .HasMaxLength(255)
+                .HasColumnName("LATITUDE");
+            entity.Property(e => e.Longitude)
+                .HasMaxLength(255)
+                .HasColumnName("LONGITUDE");
+            entity.Property(e => e.Wkt)
+                .HasMaxLength(255)
+                .HasColumnName("WKT");
         });
 
         modelBuilder.Entity<ContResiduo>(entity =>

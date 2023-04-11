@@ -6,15 +6,16 @@
 @inject IJSRuntime JSRuntime
 @page "/mapa"
 <h3>MapaPage</h3>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresVidrio"> Mostrar contenedores vidrio</button>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresPapel"> Mostrar contenedores Papel</button>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresEnvases"> Mostrar contenedores Envases</button>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresAceite"> Mostrar contenedores Aceite</button>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresRopa"> Mostrar contenedores Ropa</button>
+<button type="button" class="btn btn-outline-primary" @onclick="contenedoresVidrio"> Mostrar  vidrio</button>
+<button type="button" class="btn btn-outline-primary" @onclick="contenedoresPapel"> Mostrar  Papel</button>
+<button type="button" class="btn btn-outline-primary" @onclick="contenedoresEnvases"> Mostrar  Envases</button>
+<button type="button" class="btn btn-outline-primary" @onclick="contenedoresAceite"> Mostrar  Aceite</button>
+<button type="button" class="btn btn-outline-primary" @onclick="contenedoresRopa"> Mostrar  Ropa</button>
 <button type="button" class="btn btn-outline-primary" @onclick="EnergiaEolica"> Mostrar  Energia Eolica</button>
 <button type="button" class="btn btn-outline-primary" @onclick="CochesElectricos"> Mostrar puntos de recarga de coches</button>
 <button type="button" class="btn btn-outline-primary" @onclick="PuntosMoviles"> Mostrar puntos moviles</button>
 <button type="button" class="btn btn-outline-primary" @onclick="Bilbogarbis"> Mostrar Bilbaogarbis</button>
+<button type="button" class="btn btn-outline-primary" @onclick="ContMarron"> Mostrar Organico</button>
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
@@ -107,6 +108,13 @@
                             <RadzenGoogleMapMarker Title="@item.UdalerriaMunicipio" Label="@item.UdalerriaMunicipio" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.LatitudeGeo), Lng = Convert.ToDouble(@item.LongitudeGeo) }) />
                         }
                     }
+                    @if (contenedores13.Count > 0)
+                    {
+                        @foreach (var item in contenedores13.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Barrio" Label="@item.Barrio" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
+                        }
+                    }
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -133,6 +141,7 @@
     public string Url10 = "/api/Contenedores/ContenedorBlanco";
     public string Url11 = "/api/Contenedores/CargaElectrica";
     public string Url12 = "/api/Contenedores/EnvasesLigeros";
+    public string Url13 = "/api/Contenedores/ContMarron";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -148,6 +157,7 @@
     public List<ContenedorBlanco>? contenedores10 = new List<ContenedorBlanco>();
     public List<CargaElectrica>? contenedores11 = new List<CargaElectrica>();
     public List<EnvasesLigeros>? contenedores12 = new List<EnvasesLigeros>();
+    public List<ContMarron>? contenedores13 = new List<ContMarron>();
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -211,5 +221,8 @@
     {
         contenedores9 = await Http.GetFromJsonAsync<List<Bilbogarbi>>(Url9);
     }
-
+    async Task ContMarron()
+    {
+        contenedores13 = await Http.GetFromJsonAsync<List<ContMarron>>(Url13);
+    }
 }
