@@ -23,6 +23,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<ContMarron> ContMarrons { get; set; }
 
+    public virtual DbSet<ContNaranja> ContNaranjas { get; set; }
+
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
     public virtual DbSet<ContenedorBlanco> ContenedorBlancos { get; set; }
@@ -128,6 +130,25 @@ public partial class EcoMapsContext : DbContext
             entity.Property(e => e.Longitude)
                 .HasMaxLength(255)
                 .HasColumnName("LONGITUDE");
+            entity.Property(e => e.Wkt)
+                .HasMaxLength(255)
+                .HasColumnName("WKT");
+        });
+
+        modelBuilder.Entity<ContNaranja>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("ContNaranja");
+
+            entity.Property(e => e.Description)
+                .HasMaxLength(255)
+                .HasColumnName("description");
+            entity.Property(e => e.Latitude).HasMaxLength(255);
+            entity.Property(e => e.Longitude).HasMaxLength(255);
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
             entity.Property(e => e.Wkt)
                 .HasMaxLength(255)
                 .HasColumnName("WKT");
