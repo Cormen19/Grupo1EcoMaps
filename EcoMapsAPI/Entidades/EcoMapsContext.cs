@@ -33,6 +33,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<Eolica> Eolicas { get; set; }
 
+    public virtual DbSet<PuntosLimpio> PuntosLimpios { get; set; }
+
     public virtual DbSet<PuntosMovile> PuntosMoviles { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -237,6 +239,24 @@ public partial class EcoMapsContext : DbContext
             entity.HasNoKey();
 
             entity.Property(e => e.Nombre).HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<PuntosLimpio>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.Concello).HasMaxLength(255);
+            entity.Property(e => e.DescricionCe).HasColumnName("DescricionCE");
+            entity.Property(e => e.Enderezo).HasMaxLength(255);
+            entity.Property(e => e.Horario).HasMaxLength(255);
+            entity.Property(e => e.Id)
+                .HasMaxLength(255)
+                .HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
+            entity.Property(e => e.Provincia).HasMaxLength(255);
+            entity.Property(e => e.Telefono).HasMaxLength(255);
         });
 
         modelBuilder.Entity<PuntosMovile>(entity =>
