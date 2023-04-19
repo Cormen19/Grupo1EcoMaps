@@ -23,6 +23,8 @@ public partial class EcoMapsContext : DbContext
 
     public virtual DbSet<ContMarron> ContMarrons { get; set; }
 
+    public virtual DbSet<ContNaranja> ContNaranjas { get; set; }
+
     public virtual DbSet<ContResiduo> ContResiduos { get; set; }
 
     public virtual DbSet<ContenedorBlanco> ContenedorBlancos { get; set; }
@@ -30,6 +32,8 @@ public partial class EcoMapsContext : DbContext
     public virtual DbSet<EnvasesLigero> EnvasesLigeros { get; set; }
 
     public virtual DbSet<Eolica> Eolicas { get; set; }
+
+    public virtual DbSet<PuntosLimpio> PuntosLimpios { get; set; }
 
     public virtual DbSet<PuntosMovile> PuntosMoviles { get; set; }
 
@@ -133,6 +137,25 @@ public partial class EcoMapsContext : DbContext
                 .HasColumnName("WKT");
         });
 
+        modelBuilder.Entity<ContNaranja>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("ContNaranja");
+
+            entity.Property(e => e.Description)
+                .HasMaxLength(255)
+                .HasColumnName("description");
+            entity.Property(e => e.Latitude).HasMaxLength(255);
+            entity.Property(e => e.Longitude).HasMaxLength(255);
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
+            entity.Property(e => e.Wkt)
+                .HasMaxLength(255)
+                .HasColumnName("WKT");
+        });
+
         modelBuilder.Entity<ContResiduo>(entity =>
         {
             entity.HasNoKey();
@@ -216,6 +239,24 @@ public partial class EcoMapsContext : DbContext
             entity.HasNoKey();
 
             entity.Property(e => e.Nombre).HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<PuntosLimpio>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.Concello).HasMaxLength(255);
+            entity.Property(e => e.DescricionCe).HasColumnName("DescricionCE");
+            entity.Property(e => e.Enderezo).HasMaxLength(255);
+            entity.Property(e => e.Horario).HasMaxLength(255);
+            entity.Property(e => e.Id)
+                .HasMaxLength(255)
+                .HasColumnName("id");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("name");
+            entity.Property(e => e.Provincia).HasMaxLength(255);
+            entity.Property(e => e.Telefono).HasMaxLength(255);
         });
 
         modelBuilder.Entity<PuntosMovile>(entity =>

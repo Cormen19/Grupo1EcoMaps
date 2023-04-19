@@ -166,5 +166,27 @@ namespace EcoMapsAPI.Controllers
             }).ToListAsync();
             return Ok(allContenedores);
         }
+        [HttpGet("ContNaranja")]
+        public async Task<ActionResult<IEnumerable<ContNaranja>>> GetAllContNaranja()
+        {
+            var allContenedores = await _context.ContNaranjas.Select(c => new
+            {
+                c.Name,
+                c.Latitude,
+                c.Longitude
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
+        [HttpGet("PuntosLimpios")]
+        public async Task<ActionResult<IEnumerable<ContNaranja>>> GetAllPuntosLimpios()
+        {
+            var allContenedores = await _context.PuntosLimpios.Select(c => new
+            {
+                c.Name,
+                c.Latitude,
+                c.Longitude
+            }).ToListAsync();
+            return Ok(allContenedores);
+        }
     }
 }

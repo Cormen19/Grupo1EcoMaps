@@ -14,7 +14,7 @@
 <button type="button" class="btn btn-outline-primary" @onclick="EnergiaEolica"> Mostrar  Energia Eolica</button>
 <button type="button" class="btn btn-outline-primary" @onclick="CochesElectricos"> Mostrar puntos de recarga de coches</button>
 <button type="button" class="btn btn-outline-primary" @onclick="PuntosMoviles"> Mostrar puntos moviles</button>
-<button type="button" class="btn btn-outline-primary" @onclick="Bilbogarbis"> Mostrar Bilbaogarbis</button>
+<button type="button" class="btn btn-outline-primary" @onclick="Bilbogarbis"> Mostrar Puntos Limpios</button>
 <button type="button" class="btn btn-outline-primary" @onclick="ContMarron"> Mostrar Organico</button>
 <div class="container-fluid">
     <div class="row p-3">
@@ -115,6 +115,20 @@
                             <RadzenGoogleMapMarker Title="@item.Barrio" Label="@item.Barrio" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
                         }
                     }
+                    @if (contenedores14.Count > 0)
+                    {
+                        @foreach (var item in contenedores14.Take(20))
+                        {
+                            <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
+                        }
+                    }
+                        @if (contenedores15.Count > 0)
+                        {
+                            @foreach (var item in contenedores15.Take(20))
+                            {
+                                <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
+                            }
+                        }
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -142,6 +156,8 @@
     public string Url11 = "/api/Contenedores/CargaElectrica";
     public string Url12 = "/api/Contenedores/EnvasesLigeros";
     public string Url13 = "/api/Contenedores/ContMarron";
+    public string Url14 = "/api/Contenedores/ContNaranja";
+    public string Url15 = "/api/Contenedores/PuntosLimpios";
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -158,7 +174,6 @@
     public List<CargaElectrica>? contenedores11 = new List<CargaElectrica>();
     public List<EnvasesLigeros>? contenedores12 = new List<EnvasesLigeros>();
     public List<ContMarron>? contenedores13 = new List<ContMarron>();
-    string btnVidrio;
     RadzenGoogleMap map;
 
     async void OnMapClick(GoogleMapClickEventArgs args)
@@ -204,6 +219,7 @@
     async Task contenedoresAceite()
     {
         contenedores5 = await Http.GetFromJsonAsync<List<Contenedores>>(Url5);
+        contenedores14 = await Http.GetFromJsonAsync<List<ContNaranja>>(Url14);
     }
     async Task EnergiaEolica()
     {
@@ -222,6 +238,7 @@
     {
         
         contenedores9 = await Http.GetFromJsonAsync<List<Bilbogarbi>>(Url9);
+        contenedores15 = await Http.GetFromJsonAsync<List<PuntosLimpio>>(Url15);
     }
     async Task ContMarron()
     {
