@@ -3953,19 +3953,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arkaitz\\.nuget\\packages\\": {}
+    "C:\\Users\\6002440\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "projectUniqueName": "C:\\Users\\6002440\\Documents\\GitHub\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
       "projectName": "EcoMapsServer",
-      "projectPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
-      "packagesPath": "C:\\Users\\Arkaitz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
+      "projectPath": "C:\\Users\\6002440\\Documents\\GitHub\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "packagesPath": "C:\\Users\\6002440\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\6002440\\Documents\\GitHub\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Arkaitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\6002440\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4025,7 +4025,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
