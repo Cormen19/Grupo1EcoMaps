@@ -775,7 +775,7 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Radzen.Blazor/4.9.2": {
+      "Radzen.Blazor/4.8.0": {
         "type": "package",
         "dependencies": {
           "LibSassBuilder": "2.0.1",
@@ -2436,10 +2436,10 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Radzen.Blazor/4.9.2": {
-      "sha512": "m3iC1A4RF4Bb6zTy3HQN8FDYtmA6jaaxLghtX98NCPhAJhvodxFBH4KScbZLcUHvgsRYvgP0BVSoZNBvneQwyA==",
+    "Radzen.Blazor/4.8.0": {
+      "sha512": "sqKlKQUXK7Nt2yeER3JZvolDzF5nFbi8TT0cOMK+3TTU0MH/rNYgcSJajpc0d6DiZx3wI6Z1AtT8Rn0ie14SVw==",
       "type": "package",
-      "path": "radzen.blazor/4.9.2",
+      "path": "radzen.blazor/4.8.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2458,7 +2458,7 @@
         "lib/net7.0/Radzen.Blazor.xml",
         "lib/netstandard2.1/Radzen.Blazor.dll",
         "lib/netstandard2.1/Radzen.Blazor.xml",
-        "radzen.blazor.4.9.2.nupkg.sha512",
+        "radzen.blazor.4.8.0.nupkg.sha512",
         "radzen.blazor.nuspec",
         "staticwebassets/Radzen.Blazor.js",
         "staticwebassets/css/dark-base.css",
@@ -3949,7 +3949,7 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.3",
-      "Radzen.Blazor >= 4.9.2"
+      "Radzen.Blazor >= 4.8.0"
     ]
   },
   "packageFolders": {
@@ -4009,7 +4009,7 @@
           },
           "Radzen.Blazor": {
             "target": "Package",
-            "version": "[4.9.2, )"
+            "version": "[4.8.0, )"
           }
         },
         "imports": [
@@ -4034,5 +4034,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

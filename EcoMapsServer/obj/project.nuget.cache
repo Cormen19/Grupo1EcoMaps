@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SNegJE0jm0RZOkUoCU/2uW0nifucQOsR73rbfQGkk0svscs2Xb0CgHKSJeu3WVS85vvWC/t0+mXLy8n7oUdV4Q==",
+  "dgSpecHash": "iVne5Iij5EDH66V7D7IB8kKcT0mgkIPmEu+pk0fDxMv1Id80YPmxEMpmQl4nBdguP5Ag495WKLp5xtFD9MV9jA==",
   "success": true,
   "projectFilePath": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,7 @@
     "C:\\Users\\javit\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
-    "C:\\Users\\javit\\.nuget\\packages\\radzen.blazor\\4.9.2\\radzen.blazor.4.9.2.nupkg.sha512",
+    "C:\\Users\\javit\\.nuget\\packages\\radzen.blazor\\4.8.0\\radzen.blazor.4.8.0.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
@@ -84,5 +84,12 @@
     "C:\\Users\\javit\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\javit\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
