@@ -10,7 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
-          "Radzen.Blazor": "4.7.1"
+          "Radzen.Blazor": "4.10.0"
         },
         "runtime": {
           "EcoMapsServer2.dll": {}
@@ -96,7 +96,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.CSharp/4.5.0": {},
       "Microsoft.Data.SqlClient/5.0.1": {
         "dependencies": {
           "Azure.Identity": "1.6.0",
@@ -421,7 +421,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.21.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.CSharp": "4.5.0",
           "Microsoft.IdentityModel.Logging": "6.21.0",
           "System.Security.Cryptography.Cng": "5.0.0"
         },
@@ -479,18 +479,17 @@
           }
         }
       },
-      "Radzen.Blazor/4.7.1": {
+      "Radzen.Blazor/4.10.0": {
         "dependencies": {
           "LibSassBuilder": "2.0.1",
           "Microsoft.AspNetCore.Components": "6.0.0",
           "Microsoft.AspNetCore.Components.Web": "6.0.0",
-          "Microsoft.CSharp": "4.7.0",
           "System.Linq.Dynamic.Core": "1.2.22"
         },
         "runtime": {
           "lib/net6.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "4.7.1.0",
-            "fileVersion": "4.7.1.0"
+            "assemblyVersion": "4.10.0.0",
+            "fileVersion": "4.10.0.0"
           }
         }
       },
@@ -839,12 +838,12 @@
       "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.7.0": {
+    "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "path": "microsoft.csharp/4.7.0",
-      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/5.0.1": {
       "type": "package",
@@ -1084,12 +1083,12 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "Radzen.Blazor/4.7.1": {
+    "Radzen.Blazor/4.10.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ciCFmcY04voBLCFk8someuFa/h/YnS73YyMDNGdoarx+rfc5z/poqgZe0ANS5lnBFC6shKDwmt4DHnT0kkf7Dw==",
-      "path": "radzen.blazor/4.7.1",
-      "hashPath": "radzen.blazor.4.7.1.nupkg.sha512"
+      "sha512": "sha512-346Og3KroAbuI165SwgpfQ93epfwf/6Gla9njEPYha3SWEJ8q8Pg2Zputw+KFYo5nrhV2VOxMdeCdeCdAVZ9sQ==",
+      "path": "radzen.blazor/4.10.0",
+      "hashPath": "radzen.blazor.4.10.0.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",
