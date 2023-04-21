@@ -3953,19 +3953,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arkaitz\\.nuget\\packages\\": {}
+    "C:\\Users\\javit\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "projectUniqueName": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
       "projectName": "EcoMapsServer",
-      "projectPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
-      "packagesPath": "C:\\Users\\Arkaitz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\Ejercicios_Clase\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
+      "projectPath": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "packagesPath": "C:\\Users\\javit\\.nuget\\packages\\",
+      "outputPath": "D:\\Dam\\EcoMaps\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Arkaitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\javit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3973,6 +3978,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4025,7 +4031,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
