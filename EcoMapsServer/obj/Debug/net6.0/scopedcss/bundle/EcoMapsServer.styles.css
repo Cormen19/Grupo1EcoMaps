@@ -10,7 +10,7 @@ main[b-p5uumcs22u] {
 }
 
 .sidebar[b-p5uumcs22u] {
-    background-color: green;
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
 .top-row[b-p5uumcs22u] {
@@ -67,7 +67,6 @@ main[b-p5uumcs22u] {
     .top-row[b-p5uumcs22u], article[b-p5uumcs22u] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
-        background-color: darkseagreen;
     }
 }
 /* _content/EcoMapsServer/Shared/NavMenu.razor.rz.scp.css */
