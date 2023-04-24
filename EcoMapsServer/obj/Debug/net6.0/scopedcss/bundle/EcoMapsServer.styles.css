@@ -9,7 +9,9 @@ main[b-p5uumcs22u] {
     flex: 1;
 }
 
-
+.sidebar[b-p5uumcs22u] {
+    background-color: green;
+}
 
 .top-row[b-p5uumcs22u] {
     background-color: #f7f7f7;
