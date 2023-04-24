@@ -10,7 +10,7 @@ main[b-p5uumcs22u] {
 }
 
 .sidebar[b-p5uumcs22u] {
-    background-color: green;
+    background-color: green !important;
 }
 
 .top-row[b-p5uumcs22u] {
