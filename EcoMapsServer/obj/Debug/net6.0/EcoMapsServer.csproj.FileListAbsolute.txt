@@ -533,3 +533,14 @@ C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\refint\Eco
 C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.pdb
 C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.genruntimeconfig.cache
 C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\ref\EcoMapsServer.dll
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.csproj.AssemblyReference.cache
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.AssemblyInfoInputs.cache
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.AssemblyInfo.cs
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.csproj.CoreCompileInputs.cache
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.RazorAssemblyInfo.cache
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.RazorAssemblyInfo.cs
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.dll
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\refint\EcoMapsServer.dll
+C:\Users\Arkaitz\OneDrive\Escritorio\OLAAAA\Grupo1EcoMaps\EcoMapsServer\obj\Debug\net6.0\EcoMapsServer.pdb
