@@ -2,11 +2,13 @@
 @using Microsoft.JSInterop
 @using Radzen.Blazor;
 @using Radzen;
+
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
+
 @page "/mapa"
 <h3>MapaPage</h3>
-<button type="button" class="btn btn-outline-primary" src="https://api.iconify.design/material-symbols/glass-cup-outline.svg?" @onclick="contenedoresVidrio"> </button>
+<button type="button" class="btn btn-outline-primary"  @onclick="contenedoresVidrio"><i class="fas fa-check"></i> </button>
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresPapel"> Mostrar  Papel</button>
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresEnvases"> Mostrar  Envases</button>
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresAceite"> Mostrar  Aceite</button>
