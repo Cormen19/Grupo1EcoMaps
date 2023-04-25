@@ -11,7 +11,9 @@ h1:focus {
     
     background-color: green;
 }
-
+.top-row.ps-3.navbar.navbar-dark{
+    height: 82px;
+}
 a, .btn-link {
     color: #0071c1;
 }
