@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KlsJ5GFeVk+4JdBbsWs3iSLM0HHjGVMAoUHZrqVRlaQ=",
+  "Hash": "pK/+BzytFCnylFE1McRfdpvLfve7UMsmU6TiBNM+Bf0=",
   "Source": "EcoMapsServer",
   "BasePath": "_content/EcoMapsServer",
   "Mode": "Default",
@@ -612,23 +612,6 @@
       "OriginalItemSpec": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EcoMapsServer.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\botella-de-vidrio.png",
-      "SourceId": "EcoMapsServer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
-      "BasePath": "_content/EcoMapsServer",
-      "RelativePath": "botella-de-vidrio.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\botella-de-vidrio.png"
-    },
-    {
       "Identity": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "EcoMapsServer",
       "SourceType": "Discovered",
@@ -848,6 +831,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\img\\botella-de-vidrio.png",
+      "SourceId": "EcoMapsServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "BasePath": "_content/EcoMapsServer",
+      "RelativePath": "img/botella-de-vidrio.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\botella-de-vidrio.png"
+    },
+    {
+      "Identity": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\img\\Logos-EcoMaps.png",
+      "SourceId": "EcoMapsServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\",
+      "BasePath": "_content/EcoMapsServer",
+      "RelativePath": "img/Logos-EcoMaps.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logos-EcoMaps.png"
     }
   ]
 }

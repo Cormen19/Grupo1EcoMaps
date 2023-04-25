@@ -1,5 +1,5 @@
 ﻿@inherits LayoutComponentBase
-
+@inject NavigationManager NavigationManager;
 <PageTitle>EcoMapsServer</PageTitle>
 
 <div class="page">
@@ -9,7 +9,7 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <button style="border-style:none; background-color:darkseagreen" @onclick="@RedirectToUrl">Mas Info</button>
         </div>
 
         <article class="content px-4">
@@ -17,3 +17,10 @@
         </article>
     </main>
 </div>
+@code{
+    
+    private void RedirectToUrl()
+    {
+        NavigationManager.NavigateTo("https://drive.google.com/drive/u/1/folders/1iDM7nJza7FOt7eR9Wic_ns0Iujmk6M3K");
+    }
+}

@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\EcoMapsServer.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\botella-de-vidrio.png",
-      "PackagePath": "staticwebassets\\botella-de-vidrio.png"
-    },
-    {
       "Id": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
@@ -59,6 +55,14 @@
     {
       "Id": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\img\\Logos-EcoMaps.png",
+      "PackagePath": "staticwebassets\\img\\Logos-EcoMaps.png"
+    },
+    {
+      "Id": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\wwwroot\\img\\botella-de-vidrio.png",
+      "PackagePath": "staticwebassets\\img\\botella-de-vidrio.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EcoMapsServer.Microsoft.AspNetCore.StaticWebAssets.props",
