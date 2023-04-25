@@ -3722,24 +3722,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\6002440\\.nuget\\packages\\": {}
+    "C:\\Users\\Arkaitz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsAPI\\EcoMapsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsAPI\\EcoMapsAPI.csproj",
       "projectName": "EcoMapsAPI",
-      "projectPath": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsAPI\\EcoMapsAPI.csproj",
-      "packagesPath": "C:\\Users\\6002440\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\6002440\\Desktop\\Grupo1EcoMaps\\EcoMapsAPI\\obj\\",
+      "projectPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsAPI\\EcoMapsAPI.csproj",
+      "packagesPath": "C:\\Users\\Arkaitz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\6002440\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Arkaitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
