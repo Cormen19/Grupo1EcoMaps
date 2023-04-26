@@ -8,6 +8,13 @@ main[b-p5uumcs22u] {
     flex: 1;
 }
 
+.btn{
+    background-color: white;
+    border-style:none;
+    
+}
+
+
 .content.px-4{
     height: 605px;
 }

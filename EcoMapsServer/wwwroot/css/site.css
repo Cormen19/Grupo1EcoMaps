@@ -18,10 +18,16 @@ a, .btn-link {
     color: #0071c1;
 }
 
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+}
+
+.btn{
+    background-color: white;
+    border-style:none;
 }
 
 .content {
