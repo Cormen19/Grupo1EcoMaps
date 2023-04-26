@@ -22,12 +22,12 @@ else
                     AllowPaging="true"
                     PageSize="5">
         <Columns>
-            <RadzenDataGridColumn TItem="WeatherForecast" Property="Date" Title="Date">
+            <RadzenDataGridColumn TItem="WeatherForecast" Property="Date" Title="Nombre">
                 <Template Context="data">@data.Date.ToShortDateString()</Template>
             </RadzenDataGridColumn>
-            <RadzenDataGridColumn TItem="WeatherForecast" Property="TemperatureC" Title="Temp. (C)" />
-            <RadzenDataGridColumn TItem="WeatherForecast" Property="TemperatureF" Title="Temp. (F)" />
-            <RadzenDataGridColumn TItem="WeatherForecast" Property="Summary" Title="Summary" />
+            <RadzenDataGridColumn TItem="WeatherForecast" Property="TemperatureC" Title="Latitud" />
+            <RadzenDataGridColumn TItem="WeatherForecast" Property="TemperatureF" Title="Longitud" />
+            <RadzenDataGridColumn TItem="WeatherForecast" Property="Summary" Title="Ubicacion" />
         </Columns>
     </RadzenDataGrid>
 
