@@ -254,3 +254,6 @@ C:\Users\Arkaitz\OneDrive\Escritorio\Ejercicios_Clase\Grupo1EcoMaps\EcoMapsAPI\o
 C:\Users\Arkaitz\OneDrive\Escritorio\Ejercicios_Clase\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\EcoMapsAPI.pdb
 C:\Users\Arkaitz\OneDrive\Escritorio\Ejercicios_Clase\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\EcoMapsAPI.genruntimeconfig.cache
 C:\Users\Arkaitz\OneDrive\Escritorio\Ejercicios_Clase\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\ref\EcoMapsAPI.dll
+C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\EcoMapsAPI.dll
+C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\refint\EcoMapsAPI.dll
+C:\Users\6002440\Desktop\Grupo1EcoMaps\EcoMapsAPI\obj\Debug\net6.0\EcoMapsAPI.pdb
