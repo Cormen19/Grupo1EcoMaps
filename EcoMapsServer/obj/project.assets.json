@@ -3978,19 +3978,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arkaitz\\.nuget\\packages\\": {}
+    "C:\\Users\\in2dm3\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "projectUniqueName": "C:\\Users\\in2dm3\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
       "projectName": "EcoMapsServer",
-      "projectPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
-      "packagesPath": "C:\\Users\\Arkaitz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Arkaitz\\OneDrive\\Escritorio\\OLAAAA\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
+      "projectPath": "C:\\Users\\in2dm3\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\EcoMapsServer.csproj",
+      "packagesPath": "C:\\Users\\in2dm3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\in2dm3\\Desktop\\Grupo1EcoMaps\\EcoMapsServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Arkaitz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\in2dm3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3998,6 +4003,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4046,24 +4052,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4072,7 +4060,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
