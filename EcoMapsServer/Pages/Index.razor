@@ -29,9 +29,7 @@
 <div>
     <p>Si te interesa saber donde se encuentra los diferentes puntos de apoyo al medio ambiente.</p>
 </div>
-<div id="map" style="width:100%; height:700px; border-radius:10px">
 
-</div>
 
 @code {
     Timer timer;
@@ -64,13 +62,7 @@
     {
         timer?.Dispose();
     }
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JSRuntime.InvokeVoidAsync("initialize",null);
-        }
-    }
+    
 }
 
 
