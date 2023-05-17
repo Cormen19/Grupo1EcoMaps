@@ -42,7 +42,14 @@ a, .btn-link {
 .content {
     padding-top: 1.1rem;
 }
-
+.content.px-4{
+    height:657px;
+}
+.button.botonPersonajes {
+    border-style: black solid;
+    margin-left: 6%;
+    background-color: #deb887;
+}
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }

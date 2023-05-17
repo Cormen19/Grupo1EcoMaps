@@ -1,0 +1,83 @@
+﻿@page "/rickmorty"
+@using Model
+@inject HttpClient Client
+<button class="botonPersonajes" type="button" @onclick=SinBuscador style="border-style:black solid; margin-left:6%;background-color:#deb887">Personajes</button>
+<button type="button" @onclick=ConBuscador style="border-style:black solid; margin-left:6%; background-color:#deb887">Buscador Personajes</button>
+
+@if (sinBuscador == true)
+{
+    <h3 style="margin-top:3%">Personajes</h3>
+    <table>
+        @if (personajesModel != null)
+        {
+            <tr>
+                <th>Nombre</th>
+                <th style="padding-left:11%">Imagen</th>
+            </tr>
+            foreach (var item in personajesModel.results.Skip(contador * 4).Take(4))
+            {
+
+
+                <tr>
+                    <td>@item.name</td>
+                    <td><img src="@item.image" style="width:35%;margin-left:10%" /></td>
+                </tr>
+
+            }
+
+        }
+    </table>
+    <button type="button" class="btn btn-outline-primary" @onclick=Anterior style="margin-top:2%">Anterior</button>
+    <button type="button" class="btn btn-outline-primary" @onclick=Siguiente style="margin-top:2%;margin-left:1%">Siguiente</button>
+}
+
+@if (conBuscador == true)
+{
+    <p>Holaaaa</p>
+}
+
+
+@code {
+    bool sinBuscador = false;
+    bool conBuscador = false;
+    public int contador = 0;
+    public int contador1 = 1;
+    PersonajesModel personajesModel;
+    protected override async Task OnInitializedAsync()
+    {
+        personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetAllPersonajes());
+    }
+    void Anterior()
+    {
+        if (contador == 0)
+        {
+            return;
+        }
+        else
+        {
+            contador--;
+        }
+    }
+    void Siguiente()
+    {
+        if (contador == 4)
+        {
+            return;
+        }
+        else
+        {
+            contador++;
+        }
+    }
+    void SinBuscador()
+    {
+        sinBuscador = true;
+        conBuscador = false;
+    }
+    void ConBuscador()
+    {
+        sinBuscador = false;
+        conBuscador = true;
+    }
+
+}
