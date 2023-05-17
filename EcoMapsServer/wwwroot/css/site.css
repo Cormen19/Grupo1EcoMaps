@@ -17,9 +17,8 @@ html, body {
 h1:focus {
     outline: none;
 }
-.sidebar[b-p5uumcs22u]{
-    
-    background-color: green;
+.sidebar[b-p5uumcs22u] {
+    background-color: #1d8697;
 }
 .top-row.ps-3.navbar.navbar-dark{
     height: 82px;
