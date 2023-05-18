@@ -1,0 +1,26 @@
+﻿@page "/detallespersonajes/{id}"
+@using Model
+@inject HttpClient Client
+<h3>DetallesPersonajes</h3>
+
+@if (personajes != null)
+{
+    <p><strong>Name:</strong> @personajes.name</p>
+
+}
+
+<button type="button" class="btn btn-outline-primary" style="margin-top:2%"><a href="/rickmorty">Volver</a></button>
+
+@code {
+    [Parameter]
+    public string id{ get; set; }
+
+    PersonajeUnico personajes;
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        personajes = await Client.GetFromJsonAsync<PersonajeUnico>(Endpoints.GetPersonajesId(id));
+        
+    }
+}

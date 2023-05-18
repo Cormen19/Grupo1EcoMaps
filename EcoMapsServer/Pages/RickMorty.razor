@@ -20,7 +20,7 @@
 
                 <tr>
                     <td>@item.name</td>
-                    <td><img src="@item.image" style="width:35%;margin-left:10%" /></td>
+                    <td><a href="/detallespersonajes/@item.id"><img src="@item.image" style="width:35%;margin-left:10%" /></a></td>
                 </tr>
 
             }
@@ -33,7 +33,19 @@
 
 @if (conBuscador == true)
 {
-    <p>Holaaaa</p>
+    <div style="position:absolute;margin-top:1%">
+    <input type="text" @bind="@name"/>
+    <button class="btn btn-outline-primary" @onclick="PersonajeNombre">Buscar</button>
+    </div>
+    <div style="margin-top:7%">
+    @if (personajesModel2 != null)
+    {
+        foreach(var item in personajesModel2.results)
+        {
+            <p>@item.name</p>
+        }
+    }
+    </div>
 }
 
 
@@ -42,7 +54,9 @@
     bool conBuscador = false;
     public int contador = 0;
     public int contador1 = 1;
+    string name;
     PersonajesModel personajesModel;
+    PersonajesModel personajesModel2;
     protected override async Task OnInitializedAsync()
     {
         personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetAllPersonajes());
@@ -79,5 +93,8 @@
         sinBuscador = false;
         conBuscador = true;
     }
-
+    async Task PersonajeNombre()
+    {
+        personajesModel2 = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetPersonajesByName(name));
+    }
 }
