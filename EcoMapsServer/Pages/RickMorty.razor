@@ -33,8 +33,9 @@
 
 @if (conBuscador == true)
 {
-    <div style="position:absolute;margin-top:1%">
-    <input type="text" @bind="@name"/>
+    
+    <div style="position:absolute;margin-top:1%;height:auto;margin-left:21px">
+    <input type="text" @bind="@name" placeholder="Personaje"/>
     <button class="btn btn-outline-primary" @onclick="PersonajeNombre">Buscar</button>
     </div>
     <div style="margin-top:7%">
@@ -42,11 +43,16 @@
     {
         foreach(var item in personajesModel2.results)
         {
-            <p>@item.name</p>
+                <BuscadorCard name=@item.name
+                    status=@item.status
+                    gender=@item.gender
+                    image=@item.image />
         }
     }
     </div>
+    
 }
+
 
 
 @code {
@@ -97,4 +103,5 @@
     {
         personajesModel2 = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetPersonajesByName(name));
     }
+
 }

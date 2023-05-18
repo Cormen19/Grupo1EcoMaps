@@ -1,6 +1,34 @@
-﻿
-<h3>PersonajesCard</h3>
+﻿@inject NavigationManager NavigationManager
+@using Model
+<div class="card border-dark mb-1" style="display:flex;float:left;width:40%;height:550px;background-color:sandybrown">
+    <div class="text-center" style="font-size:xx-medium">
+        <div class="card-body">
+
+            <p><img src="@image" /></p>
+            <p class="card-text"><strong>Nombre:</strong> @name</p>
+            <p class="card-text"><strong>Tipo:</strong> @status</p>
+            <p class="card-text"><strong>Genero:</strong> @gender</p>
+            <p class="card-text"><strong>Ubicacion:</strong> @location</p>
+            <button type="button" @onclick="IrAtras" style="margin-top:2%;border-radius:5px;padding:2%;border-style:none">Volver</button>
+
+        </div>
+    </div>
+</div>
 
 @code {
-
+    [Parameter]
+    public string name{ get; set; }
+    [Parameter]
+    public string status { get; set; }
+    [Parameter]
+    public string gender { get; set; }
+    [Parameter]
+    public string location { get; set; }
+    [Parameter]
+    public string image { get; set; }
+    PersonajesModel personajesModel;
+    private void IrAtras()
+    {
+        NavigationManager.NavigateTo("/rickmorty");
+    }
 }

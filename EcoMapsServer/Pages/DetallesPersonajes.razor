@@ -5,11 +5,15 @@
 
 @if (personajes != null)
 {
-    <p><strong>Name:</strong> @personajes.name</p>
+    <PersonajesCard name=@personajes.name
+    status=@personajes.status
+    gender=@personajes.gender
+    location=@personajes.location.name
+    image=@personajes.image/>
 
 }
 
-<button type="button" class="btn btn-outline-primary" style="margin-top:2%"><a href="/rickmorty">Volver</a></button>
+
 
 @code {
     [Parameter]
