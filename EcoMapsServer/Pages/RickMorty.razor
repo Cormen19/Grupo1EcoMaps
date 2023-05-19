@@ -1,18 +1,19 @@
 ﻿@page "/rickmorty"
 @using Model
 @inject HttpClient Client
-<button class="botonPersonajes" type="button" @onclick=SinBuscador style="border-style:black solid; margin-left:6%;background-color:#deb887">Personajes</button>
-<button type="button" @onclick=ConBuscador style="border-style:black solid; margin-left:6%; background-color:#deb887">Buscador Personajes</button>
+<button class="botonPersonajes" type="button" @onclick=SinBuscador>Personajes</button>
+<button type="button" class="botonPersonajes" @onclick=ConBuscador>Buscador Personajes</button>
+<button class="botonPersonajes" type="button" @onclick=ConSelect>Select Personajes</button>
 
 @if (sinBuscador == true)
 {
-    <h3 style="margin-top:3%">Personajes</h3>
+    <h3 class="tituloPersonajes">Personajes</h3>
     <table>
         @if (personajesModel != null)
         {
             <tr>
                 <th>Nombre</th>
-                <th style="padding-left:11%">Imagen</th>
+                <th class="imagenPersonajesTH">Imagen</th>
             </tr>
             foreach (var item in personajesModel.results.Skip(contador * 4).Take(4))
             {
@@ -20,7 +21,7 @@
 
                 <tr>
                     <td>@item.name</td>
-                    <td><a href="/detallespersonajes/@item.id"><img src="@item.image" style="width:35%;margin-left:10%" /></a></td>
+                    <td><a href="/detallespersonajes/@item.id"><img src="@item.image" class="imagenPersonajes" /></a></td>
                 </tr>
 
             }
@@ -34,11 +35,11 @@
 @if (conBuscador == true)
 {
     
-    <div style="position:absolute;margin-top:1%;height:auto;margin-left:21px">
+    <div class="inputBuscador">
     <input type="text" @bind="@name" placeholder="Personaje"/>
     <button class="btn btn-outline-primary" @onclick="PersonajeNombre">Buscar</button>
     </div>
-    <div style="margin-top:7%">
+    <div class="resultadosBusqueda">
     @if (personajesModel2 != null)
     {
         foreach(var item in personajesModel2.results)
@@ -53,16 +54,33 @@
     
 }
 
+@if (conSelect == true)
+{
+    @if (localizacion != null)
+    {
+        
+        foreach(var item in localizacion)
+        {
+            
+                <p>@item.name</p>
+            
+        }
+        
+    }
+}
+
 
 
 @code {
     bool sinBuscador = false;
     bool conBuscador = false;
+    bool conSelect = false;
     public int contador = 0;
     public int contador1 = 1;
     string name;
     PersonajesModel personajesModel;
     PersonajesModel personajesModel2;
+    List<Location> localizacion = new List<Location>();
     protected override async Task OnInitializedAsync()
     {
         personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetAllPersonajes());
@@ -93,15 +111,36 @@
     {
         sinBuscador = true;
         conBuscador = false;
+        conSelect = false;
     }
     void ConBuscador()
     {
         sinBuscador = false;
+        conSelect = false;
         conBuscador = true;
+    }
+    void ConSelect()
+    {
+        sinBuscador = false;
+        conBuscador = false;
+        conSelect = true;
+
+        quitarDuplicados();
     }
     async Task PersonajeNombre()
     {
         personajesModel2 = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetPersonajesByName(name));
+    }
+    private void quitarDuplicados()
+    {
+        for (int i = 0; i < personajesModel.results.Length; i++)
+        {
+            Location location = new Location();
+            location = personajesModel.results[i].location;
+            localizacion.Add(location);
+
+        }
+        localizacion = localizacion.GroupBy(x=>x.name).Select(g=>g.First()).ToList();
     }
 
 }

@@ -4,13 +4,24 @@
 
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    
 
     <main>
         
-
+        <div class="navbar">
+            <ul class="navbar-nav" style="display:inline">
+                <li class="nav-item">
+                    <a style="color:white" href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" href="/mapa">Mapa</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color:white" href="/rickmorty">Rick & Morty</a>
+                </li>
+                <!-- Agrega más elementos de menú según tus necesidades -->
+            </ul>
+        </div>
         <article class="content px-4">
             @Body
         </article>

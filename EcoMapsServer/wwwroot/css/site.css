@@ -1,4 +1,4 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -17,9 +17,7 @@ html, body {
 h1:focus {
     outline: none;
 }
-.sidebar[b-p5uumcs22u] {
-    background-color: #1d8697;
-}
+
 .top-row.ps-3.navbar.navbar-dark{
     height: 82px;
 }
@@ -45,9 +43,95 @@ a, .btn-link {
 .content.px-4{
     height:657px;
 }
-.button.botonPersonajes {
+#cardBuscador{
+    display:flex;
+    float:left;
+    width:31%;
+    height:270px;
+    background-color:sandybrown;
+    margin-left:2%;
+}
+#personajesCard{
+    display:flex;
+    float:left;
+    width:40%;
+    height:550px;
+    background-color:sandybrown;
+}
+.iconos{
+    width:110%;
+}
+.mapaTitulo{
+    margin-top:4%;
+}
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+    display:inline;
+}
+
+    .nav-item a {
+        color: #333;
+        text-decoration: none;
+    }
+
+.content {
+    padding: 20px;
+}
+main {
+    background-color:#deb887;
+}
+.tituloPersonajes{
+    margin-top:3%;
+}
+.imagenPersonajesTH{
+    padding-left:11%;
+}
+.resultadosBusqueda{
+    margin-top:7%;
+}
+.imagenBuscador{
+    width:40%;
+}
+.botonVolver{
+    margin-top:2%;
+    border-radius:5px;
+    padding:2%;
+    border-style:none;
+}
+.inputBuscador{
+    position:absolute;
+    margin-top:1%;
+    height:auto;
+    
+}
+.navbar-nav{
+    margin-left:45px;
+    color:white;
+}
+.navbar{
+    background-color:sienna;
+}
+
+
+.imagenPersonajes{
+    width:35%;
+    margin-left:10%;
+}
+.botonPersonajes {
     border-style: black solid;
-    margin-left: 6%;
+    
     background-color: #deb887;
 }
 .valid.modified:not([type=checkbox]) {

@@ -1,6 +1,6 @@
 ﻿@inject NavigationManager NavigationManager
 @using Model
-<div class="card border-dark mb-1" style="display:flex;float:left;width:40%;height:550px;background-color:sandybrown">
+<div class="card border-dark mb-1" id="personajesCard">
     <div class="text-center" style="font-size:xx-medium">
         <div class="card-body">
 
@@ -9,7 +9,7 @@
             <p class="card-text"><strong>Tipo:</strong> @status</p>
             <p class="card-text"><strong>Genero:</strong> @gender</p>
             <p class="card-text"><strong>Ubicacion:</strong> @location</p>
-            <button type="button" @onclick="IrAtras" style="margin-top:2%;border-radius:5px;padding:2%;border-style:none">Volver</button>
+            <button type="button" @onclick="IrAtras" class="botonVolver">Volver</button>
 
         </div>
     </div>

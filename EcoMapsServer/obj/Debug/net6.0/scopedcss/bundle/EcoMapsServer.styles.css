@@ -9,9 +9,6 @@ main[b-p5uumcs22u] {
     flex: 1;
 }
 
-.sidebar[b-p5uumcs22u] {
-    background-color:sienna;
-}
 
 .content.px-4[b-p5uumcs22u]{
     background-color:burlywood;
@@ -55,12 +52,7 @@ main[b-p5uumcs22u] {
         flex-direction: row;
     }
 
-    .sidebar[b-p5uumcs22u] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
+    
 
     .top-row[b-p5uumcs22u] {
         position: sticky;
