@@ -56,17 +56,20 @@
 
 @if (conSelect == true)
 {
+    <h3 class="selectLocations">Buscador Select</h3>
+    <select>
     @if (localizacion != null)
     {
         
         foreach(var item in localizacion)
         {
-            
-                <p>@item.name</p>
+          <option>@item.name</option> 
+                
             
         }
         
     }
+    </select>
 }
 
 

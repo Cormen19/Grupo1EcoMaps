@@ -123,7 +123,9 @@ main {
 .navbar{
     background-color:sienna;
 }
-
+.selectLocations{
+    margin-top:3%;
+}
 
 .imagenPersonajes{
     width:35%;
