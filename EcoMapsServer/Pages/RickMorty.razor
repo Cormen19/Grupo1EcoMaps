@@ -1,4 +1,4 @@
-﻿@page "/rickmorty"
+@page "/rickmorty"
 @using Model
 @inject HttpClient Client
 <button class="botonPersonajes" type="button" @onclick=SinBuscador>Personajes</button>
@@ -56,21 +56,30 @@
 
 @if (conSelect == true)
 {
-    <h3 class="selectLocations">Buscador Select</h3>
-    <select>
-    @if (localizacion != null)
-    {
-        
-        foreach(var item in localizacion)
-        {
-          <option>@item.name</option> 
-                
-            
-        }
-        
-    }
+    
+    <h3 class="selectLocations">Select Status</h3>
+    <div class="inputSelect">
+    <select @bind="@status">
+        <option selected>None</option>
+        <option>Alive</option>
+        <option>Dead</option>
+        <option>Unknown</option>
     </select>
+    <button class="btn btn-outline-primary" @onclick="SearchStatus">Buscar</button>
+    </div>
+    <div class="resultadosBusquedaSelect">
+    @if(personajesModel!=null){
+        foreach(var item in personajesModel.results){
+             <BuscadorCard name=@item.name
+                    status=@item.status
+                    gender=@item.gender
+                    image=@item.image />
+        }
+    }
+    </div>
 }
+   
+
 
 
 
@@ -81,9 +90,13 @@
     public int contador = 0;
     public int contador1 = 1;
     string name;
+    string status;
+    private string searchTerm="";
+    
     PersonajesModel personajesModel;
     PersonajesModel personajesModel2;
     List<Location> localizacion = new List<Location>();
+    List<string> status1=new List<string>();
     protected override async Task OnInitializedAsync()
     {
         personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetAllPersonajes());
@@ -127,23 +140,15 @@
         sinBuscador = false;
         conBuscador = false;
         conSelect = true;
+        
 
-        quitarDuplicados();
     }
     async Task PersonajeNombre()
     {
         personajesModel2 = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetPersonajesByName(name));
     }
-    private void quitarDuplicados()
-    {
-        for (int i = 0; i < personajesModel.results.Length; i++)
-        {
-            Location location = new Location();
-            location = personajesModel.results[i].location;
-            localizacion.Add(location);
-
-        }
-        localizacion = localizacion.GroupBy(x=>x.name).Select(g=>g.First()).ToList();
+    async Task SearchStatus(){
+        personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetStatusPersonajes(status));
     }
-
 }
+

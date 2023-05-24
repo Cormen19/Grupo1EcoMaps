@@ -14,5 +14,9 @@
         {
             return $"https://rickandmortyapi.com/api/character/?name={name}";
         }
+        public static string GetStatusPersonajes(string status)
+        {
+            return $"https://rickandmortyapi.com/api/character/?status={status}";
+        }
     }
 }
