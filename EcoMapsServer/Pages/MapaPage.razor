@@ -1,8 +1,8 @@
-@using EcoMapsServer.Data
+﻿@using EcoMapsServer.Data
 @using Microsoft.JSInterop
 @using Radzen.Blazor;
 @using Radzen;
-
+@inject NavigationManager navigationManager;
 @inject HttpClient Http
 @inject IJSRuntime JSRuntime
 
@@ -11,13 +11,14 @@
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresVidrio"><img src="https://api.iconify.design/ph/beer-bottle-fill.svg" class="iconos"> </button>
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresPapel"><img src="https://api.iconify.design/mdi/paper.svg" class="iconos"></button>
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresEnvases"><img src="https://api.iconify.design/material-symbols/water-bottle-large-rounded.svg" class="iconos"></button>
-<button type="button" class="btn btn-outline-primary" @onclick="contenedoresAceite"><img src="https://api.iconify.design/material-symbols/oil-barrel.svg" class="iconos"></button>
+
 <button type="button" class="btn btn-outline-primary" @onclick="contenedoresRopa"><img src="https://api.iconify.design/icon-park-outline/clothes-cardigan.svg" class="iconos"></button>
 <button type="button" class="btn btn-outline-primary" @onclick="EnergiaEolica"><img src="https://api.iconify.design/ic/round-energy-savings-leaf.svg" class="iconos"></button>
 <button type="button" class="btn btn-outline-primary" @onclick="CochesElectricos"><img src="https://api.iconify.design/material-symbols/directions-car-rounded.svg" class="iconos"></button>
-<button type="button" class="btn btn-outline-primary" @onclick="PuntosMoviles"> Mostrar puntos moviles</button>
-<button type="button" class="btn btn-outline-primary" @onclick="Bilbogarbis"> Mostrar Puntos Limpios</button>
+
 <button type="button" class="btn btn-outline-primary" @onclick="ContMarron"><img src="https://api.iconify.design/mdi/organic.svg" class="iconos"></button>
+<button type="button" class="btn btn-outline-primary" @onclick="recargarPagina"><img src="https://api.iconify.design/material-symbols/refresh.svg" class="iconos"></button>
+
 <div class="container-fluid">
     <div class="row p-3">
         <div class="col">
@@ -53,13 +54,7 @@
                             <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
                         }
                     }
-                    @if (contenedores5.Count > 0)
-                    {
-                        @foreach (var item in contenedores5.Take(20))
-                        {
-                            <RadzenGoogleMapMarker Title="@item.Category" Label="@item.Category" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitud), Lng = Convert.ToDouble(@item.Longitud) }) />
-                        }
-                    }
+                    
                     @if (contenedores6.Count > 0)
                     {
                         @foreach (var item in contenedores6.Take(20))
@@ -124,13 +119,7 @@
                             <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
                         }
                     }
-                        @if (contenedores15.Count > 0)
-                        {
-                            @foreach (var item in contenedores15.Take(20))
-                            {
-                                <RadzenGoogleMapMarker Title="@item.Name" Label="@item.Name" Position=@(new GoogleMapPosition() { Lat = Convert.ToDouble(@item.Latitude), Lng = Convert.ToDouble(@item.Longitude) }) />
-                            }
-                        }
+                        
                 </Markers>
             </RadzenGoogleMap>
         </div>
@@ -150,17 +139,17 @@
     public string Url2 = "/api/Contenedores/Papel";
     public string Url3 = "/api/Contenedores/Envases";
     public string Url4 = "/api/Contenedores/Ropa";
-    public string Url5 = "/api/Contenedores/Aceite";
+    
     public string Url6 = "/api/Contenedores/Eolicas";
     public string Url7 = "/api/Contenedores/CochesElec";
-    public string Url8 = "/api/Contenedores/PuntosMovil";
+    
     public string Url9 = "/api/Contenedores/Bilbogarbi";
     public string Url10 = "/api/Contenedores/ContenedorBlanco";
     public string Url11 = "/api/Contenedores/CargaElectrica";
     public string Url12 = "/api/Contenedores/EnvasesLigeros";
     public string Url13 = "/api/Contenedores/ContMarron";
     public string Url14 = "/api/Contenedores/ContNaranja";
-    public string Url15 = "/api/Contenedores/PuntosLimpios";
+    
     bool showMadridMarker;
     bool showMarcadores;
     string mensaje = "";
@@ -205,7 +194,10 @@
     }
     async Task contenedoresVidrio()
     {
+       
         contenedores = await Http.GetFromJsonAsync<List<Contenedores>>(Url);
+        
+        
     }
     async Task contenedoresPapel()
     {
@@ -224,7 +216,7 @@
     }
     async Task contenedoresAceite()
     {
-        contenedores5 = await Http.GetFromJsonAsync<List<Contenedores>>(Url5);
+       
         contenedores14 = await Http.GetFromJsonAsync<List<ContNaranja>>(Url14);
     }
     async Task EnergiaEolica()
@@ -236,18 +228,18 @@
         contenedores7 = await Http.GetFromJsonAsync<List<CochesElec>>(Url7);
         contenedores11 = await Http.GetFromJsonAsync<List<CargaElectrica>>(Url11);
     }
-    async Task PuntosMoviles()
-    {
-        contenedores8 = await Http.GetFromJsonAsync<List<PuntosMovil>>(Url8);
-    }
+    
     async Task Bilbogarbis()
     {
         
         contenedores9 = await Http.GetFromJsonAsync<List<Bilbogarbi>>(Url9);
-        contenedores15 = await Http.GetFromJsonAsync<List<PuntosLimpio>>(Url15);
+        
     }
     async Task ContMarron()
     {
         contenedores13 = await Http.GetFromJsonAsync<List<ContMarron>>(Url13);
+    }
+    void recargarPagina(){
+       navigationManager.NavigateTo(navigationManager.Uri,forceLoad:true);
     }
 }

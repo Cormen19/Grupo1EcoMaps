@@ -30,6 +30,14 @@ h1:focus {
 a, .btn-link {
     color: #0071c1;
 }
+.tituloInicio{
+    font-size:65px;
+    margin-top:35%;
+}
+.reloj{
+    margin-top:18%;
+    color:black;
+}
 
 
 .btn-primary {
