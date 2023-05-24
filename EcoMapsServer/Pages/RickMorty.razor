@@ -100,6 +100,7 @@
     {
         personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetAllPersonajes());
     }
+    //Botones siguiente y anterior para la paginacion
     void Anterior()
     {
         if (contador == 0)
@@ -122,6 +123,7 @@
             contador++;
         }
     }
+    //Funciones para mostrar y ocultar contenido en la misma ventana
     void SinBuscador()
     {
         sinBuscador = true;
@@ -142,10 +144,12 @@
         
 
     }
+    //Buscar personaje por nombre
     async Task PersonajeNombre()
     {
         personajesModel2 = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetPersonajesByName(name));
     }
+    //Buscar Personaje por estado
     async Task SearchStatus(){
         personajesModel = await Client.GetFromJsonAsync<PersonajesModel>(Endpoints.GetStatusPersonajes(status));
     }
